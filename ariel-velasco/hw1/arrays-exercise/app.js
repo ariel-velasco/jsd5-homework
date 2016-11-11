@@ -12,6 +12,7 @@
  */
 
 // Your code here
+ ["image1.png", "image2.png", "image3.png"];
 
 /**
  * Question 2
@@ -20,6 +21,8 @@
  */
 
 // Your code here
+var q2 = ["image1.png", "image2.png", "image3.png"];
+
 
 /**
  * Question 3
@@ -28,6 +31,8 @@
  */
 
 // Your code here
+var q2 = ["image1.png", "image2.png", "image3.png"];
+q2.length;
 
 /**
  * Question 4
@@ -37,7 +42,7 @@
 
 
 // Your code here
-
+var q4 = q2(2);
 
 // ____________________________________________________________________________
 
@@ -55,6 +60,10 @@
  */
 
 // Your code here
+var q1 = [1,2,3,4];
+var q2 = q1.map( function(value) { 
+    return value + 1; });
+    console.log(q2);
 
 
 /**
@@ -65,3 +74,9 @@
 
 
 // Your code here
+var total = 0
+undefined
+for(var i = 0; i < q2.length; i++) {
+    total += q2[i];
+}
+var avg = total / q2.length;

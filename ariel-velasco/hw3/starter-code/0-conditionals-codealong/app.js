@@ -36,6 +36,8 @@ if ((cost > 100 ) || (shipping < 5)){
     console.log("your total is $" + (cost + shipping));
 }*/
 
-var lastName = "biles";
+/*var lastName = "biles";
 var name = firstName && lastName;
-console.log(name);
+console.log(name); */
+
+var fName = firstName || "Jane Doe";
