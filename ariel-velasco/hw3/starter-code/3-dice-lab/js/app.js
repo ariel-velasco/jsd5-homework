@@ -19,3 +19,21 @@ Review the HTML and CSS code included in the starter code. You will need to writ
   (Hint: Use document.getElementById to reference the button, and set the value of the onclick property to specify what should happen.)
 
 */
+
+ //   Cache DOM
+var firstDie = document.getElementById("first-die");
+var secondDie = document.getElementById("second-die");
+var rollDice = document.getElementById("roll-dice");
+
+//    Functions
+function generateRandom() {
+  var randomNum = Math.round(Math.random() * (6 - 1) + 1);
+  return "dice-" + randomNum;
+}
+
+//    Combines into single function
+
+rollDice.onclick = (function(){
+  firstDie.className = generateRandom();
+  secondDie.className = generateRandom();
+});
